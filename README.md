@@ -30,8 +30,8 @@ parent_folders = [
 For example if your name is John and your projects are in `my-code`:
 ```python
 parent_folders = [
-    "C:/Users/Johnmy-code/web-dev",
-    "C:/Users/Johnmy-code/python" 
+    "C:/Users/John/my-code/web-dev",
+    "C:/Users/John/my-code/python" 
 ]
 ```
 
@@ -40,3 +40,6 @@ parent_folders = [
 2. Right-click `sync-repos.py` and open with python 
 
 Any new folders get pushed as private repos. Already existing ones are skipped. Works for both MAC and WIN users aswell as Linux
+
+> [!IMPORTANT]
+> The script uploads the grandchildren of the parent folder as a subfolder of their parent folder, not as a separate folder. e.g. if the parent is `"C:/Users/John/my-code/python"` and there is `"C:/Users/John/my-code/python/data-structure/processed-data"` then `processed-data` will upload as the child of `data-structure` and this is not ideal.
