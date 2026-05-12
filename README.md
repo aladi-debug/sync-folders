@@ -47,4 +47,4 @@ Any new folders get pushed as private repos. Already existing ones are skipped. 
 > The script uploads the grandchildren of the parent folder as a subfolder of their parent folder, not as a separate folder. e.g. if the parent is `"C:/Users/John/my-code/python"` and there is `"C:/Users/John/my-code/python/data-structure/processed-data"` then `processed-data` will upload as the child of `data-structure`.
 
 > [!TIP]
-> I wouldn't reccomend this for a long term use as it's good to have MD's and learn git but if you have too many local projects and shipping them all seems tedious (which it is) this would be your best friend for a while.
+> I wouldn't reccomend this for a long term use as it's good to have README's and learn git but if you have too many local projects and shipping them all seems tedious (which it is) this would be your best friend for a while.
